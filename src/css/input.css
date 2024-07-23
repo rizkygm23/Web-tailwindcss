@@ -21,23 +21,65 @@ body {
 .burger-active > span:nth-child(3) {
     @apply  -rotate-45;
 }
-.underline-animation {
+
+
+
+
+
+
+.btn-fixed {
+    @apply fixed;
+}
+
+
+
+
+
+
+
+
+/* CSS Kustom untuk tombol tetap di tengah horizontal dengan jarak tetap dari bawah */
+.fixed-bottom-center {
+    position: fixed;
+    bottom: 14px; /* Jarak dari bagian bawah viewport */
+    left: 50%; /* Menempatkan tombol di tengah horizontal */
+    transform: translateX(-50%); /* Menggeser tombol ke kiri sebesar setengah lebar tombol untuk pemusatan */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .underline-animation {
     position: relative;
     display: inline-block;
-  }
+  } */
 
-.underline-animation::after {
+/* .underline-animation::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: #0284c7; /* Ganti dengan warna yang Anda inginkan */
-    transition: width 0.3s ease, left 0.3s ease;
-  }
+    /* background-color: #0284c7; /* Ganti dengan warna yang Anda inginkan */
+    /* transition: width 0.3s ease, left 0.3s ease;
+  } */
 
-  .underline-animation:hover::after {
+/* .underline-animation:hover::after {
     width: 100%;
     left: 0;
-  }
+  } */ */ */
