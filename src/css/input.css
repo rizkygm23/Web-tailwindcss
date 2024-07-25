@@ -23,16 +23,38 @@ body {
 }
 
 
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: move 20s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(200px, 200px);
+    }
+}
+
+@layer components {
 
 
-
+}
+.card-portfolio {
+    @apply  ;
+}
+.card-hover:hover {
+    @apply ;
+}
 
 .btn-fixed {
     @apply fixed;
 }
 
-
-
+  
 
 
 
