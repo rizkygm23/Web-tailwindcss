@@ -2,9 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    
+}
+
 body {
     font-family: 'Inter' , sans-serif;
     font-family: po
+}
+
+.card-wrapped {
+    @apply relative bg-gradient-to-b from-sky-500 to-green-400 rounded-2xl;
+
+}
+.card-wrapped::before {
+    background: conic-gradient(
+        rgba(244,144,182,0.4) 0deg,
+        rgba(192,132,252,0.4) 0deg,
+        transparent 80deg
+
+
+    );
+    @apply absolute h-[100%] w-[100%] content-[''] animate-border-spin;
+
 }
 .navbar-fixed {
     @apply fixed z-[9999] bg-white bg-opacity-1;
